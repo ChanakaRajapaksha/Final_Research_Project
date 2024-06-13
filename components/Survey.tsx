@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Survey = () => {
   return (
@@ -7,7 +7,7 @@ const Survey = () => {
         Project <span className="text-purple">Scope</span>
       </h1>
       <p className="mt-20 text-sm md:text-lg leading-[1.6] text-white font-normal m-[-10px]">
-        " Recent literature highlights the critical advancements in drone
+        &quot;Recent literature highlights the critical advancements in drone
         technology aimed at creating a robust drone service capable of carrying
         goods in emergency situations. Vision-based landing systems leverage
         cameras and computer vision algorithms to enhance landing precision and
@@ -26,7 +26,7 @@ const Survey = () => {
         integrated technologies, leveraging AI advancements and edge computing,
         promise to revolutionize emergency response capabilities by enabling
         agile, secure, and efficient drone delivery services for critical goods
-        and supplies "...
+        and supplies.&quot;
       </p>
     </div>
   );

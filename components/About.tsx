@@ -2,6 +2,7 @@ import React from "react";
 import { teams } from "@/data";
 import { PinContainer } from "./ui/Pin";
 import { FaLinkedin, FaEnvelope } from "react-icons/fa"; // Import LinkedIn and Gmail icons
+import Image from "next/image"; // Import Image from next/image
 
 const About = () => {
   return (
@@ -21,13 +22,22 @@ const About = () => {
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
                 >
-                  <img src="/bg.png" alt="bgimg" />
+                  <Image
+                    src="/bg.png"
+                    alt="bgimg"
+                    layout="fill"
+                    objectFit="cover"
+                  />
                 </div>
-                <img
-                  src={item.img}
-                  alt="cover"
-                  className="z-10 absolute w-[400px] h-[500px] top-0"
-                />
+                <div className="z-10 absolute top-0 w-[400px] h-[500px]">
+                  <Image
+                    src={item.img}
+                    alt="cover"
+                    width={400}
+                    height={500}
+                    objectFit="contain"
+                  />
+                </div>
               </div>
 
               <h1 className="font-bold lg:text-2xl md:text-xl text-base">

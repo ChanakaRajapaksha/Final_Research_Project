@@ -1,5 +1,5 @@
-import React from 'react';
-
+import React from "react";
+import Image from "next/image"; // Import Image from next/image
 import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
 
@@ -21,11 +21,18 @@ const SubObjectives = () => {
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
                 >
-                  <img src="/bg.png" alt="bgimg" />
+                  <Image
+                    src="/bg.png"
+                    alt="Background Image"
+                    layout="fill"
+                    objectFit="cover"
+                  />
                 </div>
-                <img
+                <Image
                   src={item.img}
-                  alt="cover"
+                  alt="Cover Image"
+                  layout="fill"
+                  objectFit="cover"
                   className="z-10 absolute bottom-0"
                 />
               </div>
